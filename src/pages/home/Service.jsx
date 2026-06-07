@@ -1,9 +1,9 @@
-import Heading from "../component/Heading";
+import Heading from "./component/Heading";
 
 function Service() {
     return (
         <section className="bg-neutral-800 py-30">
-            <Heading />
+            <Heading text={"OUR SERVICE"}/>
 
             <div className="flex gap-4 w-10/12 mt-5 mx-auto">
                     <div className="grid place-items-center gap-2 border-2 border-white bg-[repeating-linear-gradient(45deg,#702130,transparent_100px)] rounded-md py-3 px-5">

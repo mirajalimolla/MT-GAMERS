@@ -1,6 +1,8 @@
-import Header from "./header/Header";
-import Hero from "./hero/Hero";
-import Service from "./service/Service";
+import About from "./About";
+import Header from "./Header";
+import Hero from "./Hero";
+import ImgSection from "./imgSection";
+import Service from "./Service";
 
 function Home() {
     return (
@@ -8,6 +10,8 @@ function Home() {
             <Header />
             <Hero />
             <Service />
+            <ImgSection />
+            <About />
         </>
     );
 }

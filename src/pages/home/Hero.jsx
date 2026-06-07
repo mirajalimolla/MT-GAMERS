@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import bgVideo from '../../../assets/bg.mp4'
+import bgVideo from '../../assets/bg.mp4'
 
 function Hero() {
     const cursor = useRef(null);
