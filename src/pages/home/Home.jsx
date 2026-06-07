@@ -1,4 +1,6 @@
 import About from "./About";
+import Details from "./Details";
+import Footer from "./Footer";
 import Header from "./Header";
 import Hero from "./Hero";
 import ImgSection from "./imgSection";
@@ -12,6 +14,8 @@ function Home() {
             <Service />
             <ImgSection />
             <About />
+            <Details />
+            <Footer />
         </>
     );
 }

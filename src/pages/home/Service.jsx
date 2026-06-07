@@ -1,4 +1,4 @@
-import Heading from "./component/Heading";
+import Heading from "./homeComponent/Heading";
 
 function Service() {
     return (
