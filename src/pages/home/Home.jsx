@@ -5,6 +5,7 @@ import Header from "./Header";
 import Hero from "./Hero";
 import ImgSection from "./imgSection";
 import Service from "./Service";
+import VideoSlider from "./VideoSlider";
 
 function Home() {
     return (
@@ -15,6 +16,7 @@ function Home() {
             <ImgSection />
             <About />
             <Details />
+            <VideoSlider />
             <Footer />
         </>
     );
