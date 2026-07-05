@@ -1,6 +1,7 @@
 // import React from "react";
 import { FaDiscord, FaFacebook, FaGreaterThan, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FaX } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -16,12 +17,12 @@ function Footer() {
                         <h3 className="text-3xl font-semibold">LINKS</h3>
                         <div className="flex gap-5 font-semibold mt-2">
                             <ul>
-                                <li className="flex items-center cursor-pointer hover:text-blue-600"><FaGreaterThan fontSize={15} /> HOME</li>
-                                <li className="flex items-center cursor-pointer mt-1 hover:text-blue-600"><FaGreaterThan fontSize={15} /> VIDEO</li>
+                                <Link to={'/'}> <li className="flex items-center cursor-pointer hover:text-blue-600"><FaGreaterThan fontSize={15} /> HOME</li> </Link>
+                                <Link to={'/video'}> <li className="flex items-center cursor-pointer mt-1 hover:text-blue-600"><FaGreaterThan fontSize={15} /> VIDEO</li> </Link>
                             </ul>
                             <ul>
-                                <li className="flex items-center cursor-pointer hover:text-blue-600"><FaGreaterThan fontSize={15} /> LOGIN</li>
-                                <li className="flex items-center cursor-pointer mt-1 hover:text-blue-600"><FaGreaterThan fontSize={15} /> SIGN UP</li>
+                                <Link to={'/login'}><li className="flex items-center cursor-pointer hover:text-blue-600"><FaGreaterThan fontSize={15} /> LOGIN</li> </Link>
+                                <Link to={'/signup'}><li className="flex items-center cursor-pointer mt-1 hover:text-blue-600"><FaGreaterThan fontSize={15} /> SIGN UP</li></Link>
                             </ul>
                         </div>
                     </div>
@@ -29,10 +30,10 @@ function Footer() {
                     <div className="grid place-items-center">
                         <h3 className="text-3xl font-semibold">FOLLOW HERE</h3>
                         <div className="flex gap-3 text-white mt-2">
-                            <FaFacebook fontSize={35} />
-                            <FaYoutube fontSize={35} />
-                            <FaInstagram fontSize={35} />
-                            <FaDiscord fontSize={35} />
+                            <Link to={'https://facebook.com'} target="_blank"> <FaFacebook fontSize={35} className="hover:text-blue-600 cursor-pointer" /></Link>
+                            <Link to={'https://youtube.com'} target="_blank"> <FaYoutube fontSize={35} className="hover:text-red-600 cursor-pointer" /></Link>
+                            <Link to={'https://instagram.com'} target="_blank"> <FaInstagram fontSize={35} className="hover:text-pink-600 cursor-pointer" /></Link>
+                            <Link to={'https://discord.com'} target="_blank"> <FaDiscord fontSize={35} className="hover:text-indigo-500 cursor-pointer" /></Link>
                         </div>
                     </div>
 
