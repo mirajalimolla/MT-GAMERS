@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import logo from '../../assets/mtGamers.png'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     // document.addEventListener("scroll", function(e){
@@ -11,8 +11,8 @@ function Header() {
         <nav className='w-screen flex items-center justify-between font-bold text-[18px] shadow-[0px_7px_10px_#761313] text-[#877979] bg-[#323232] py-3 px-25 z-50'>
             <div>
                 <ul className='flex gap-7'>
-                    <Link to={'/'}><li className='grid after:h-0.5 after:w-0 hover:after:w-full transition-all duration-300 after:transition-[width] after:duration-300 after:bg-[crimson] after:m-auto cursor-pointer text-[crimson]'>HOME</li></Link>
-                    <Link to={'/groupChat'}><li className='grid after:h-0.5 after:w-0 hover:after:w-full transition-all duration-300 after:transition-[width] after:duration-300 after:bg-[crimson] after:m-auto cursor-pointer hover:text-[crimson]'>GROUP CHAT</li></Link>
+                    <NavLink to={'/'}><li className='grid after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-[crimson] after:m-auto cursor-pointer text-[crimson]'>HOME</li></NavLink>
+                    <NavLink to={'/groupChat'}><li className='grid after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-[crimson] after:m-auto cursor-pointer hover:text-[crimson]'>GROUP CHAT</li></NavLink>
                 </ul>
             </div>
             <div>
@@ -20,8 +20,8 @@ function Header() {
             </div>
             <div>
                 <ul className='flex gap-7'>
-                    <Link to={'/video'}> <li className='grid after:h-0.5 after:w-0 hover:after:w-full transition-all duration-300 after:transition-[width] after:duration-300 after:bg-[crimson] after:m-auto cursor-pointer hover:text-[crimson]'>VIEDO</li></Link>
-                    <Link to={'/login'}> <li className='grid after:h-0.5 after:w-0 hover:after:w-full transition-all duration-300 after:transition-[width] after:duration-300 after:bg-[crimson] after:m-auto cursor-pointer hover:text-[crimson]'>LOG IN</li></Link>
+                    <NavLink to={'/video'}> <li className='grid after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-[crimson] after:m-auto cursor-pointer hover:text-[crimson]'>VIEDO</li></NavLink>
+                    <NavLink to={'/login'}> <li className='grid after:h-0.5 after:w-0 hover:after:w-full after:transition-all after:duration-300 after:bg-[crimson] after:m-auto cursor-pointer hover:text-[crimson]'>LOG IN</li></NavLink>
                 </ul>
             </div>
         </nav>
