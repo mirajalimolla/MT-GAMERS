@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 export function TextInput({ type, placeholder, customStyle, customErrorStyle, length }) {
@@ -32,9 +32,10 @@ export function PasswordInput({ customStyle, customIconStyle, customErrorStyle }
     )
 }
 
+
 export function SubmitBtn({ customStyle }) {
     return (
-        <input type={"submit"} value={"Submit"} className={`${customStyle} bg-green-700 text-white text-xl w-[40%] m-auto p-2 rounded-lg cursor-pointer`} />
+        <input type={"submit"} value={"Submit"} className={`${customStyle} bg-green-700 text-white text-lg sm:text-xl w-[40%] m-auto p-2 rounded-lg cursor-pointer`} />
     )
 }
 
@@ -42,7 +43,7 @@ export function Or({ customStyle }) {
     return (
         <div className="relative flex items-center justify-center gap-6.5 w-1/2 m-auto -mb-3 h-5">
             <div className="h-0.5 w-1/2 bg-gray-500 rounded-2xl"></div>
-            <span className={`${customStyle} absolute font-semibold text-orange-400 text-2xl left-1/2 top-[30%] pl-0.5 -translate-1/2 bg-transparent`}>or</span>
+            <span className={`${customStyle} absolute font-semibold text-orange-400 text-xl sm:text-2xl left-1/2 top-[30%] sm:pl-0.5 -translate-1/2 bg-transparent`}>or</span>
             <div className="h-0.5 w-1/2 bg-gray-500 rounded-2xl"></div>
         </div>
     )

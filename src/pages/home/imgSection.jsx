@@ -28,9 +28,9 @@ function ImgSection() {
     }, []);
 
     return (
-        <section className="h-125 relative">
-            <img src={coverBg} className="absolute max-h-full w-screen object-cover " />
-            <img src={url} className="max-h-full w-screen object-cover " />
+        <section className="relative">
+            <img src={coverBg} className="absolute h-130 w-full object-cover" />
+            <img src={url} className="w-screen h-130 object-cover" />
         </section>
     );
 }

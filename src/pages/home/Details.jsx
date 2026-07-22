@@ -8,7 +8,7 @@ import cardLogo3 from "../../assets/garena_logo.png"
 function Details() {
     return (
         <section style={{background:`linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 28%)), url(/src/assets/details.jpg) no-repeat`, backgroundSize:"cover", backgroundAttachment:"fixed", backgroundPosition:"center center"}} className="py-25 grid place-items-center">
-            <div className="w-[70%]">
+            <div className="w-[90%] sm:w-[85%] xl:w-[70%]">
                 <Heading text={"DETAILS FOR ME"}/>
                 <div className="mt-10">
                     <DetailsCard cardLogo={cardLogo1} isHeading={true} para={"Hello, fellow survivors! I'm Rahul Khan, a passionate Free Fire gamer. Here, you'll find everything from my latest gameplay highlights to tips and tricks to help you become a Free Fire pro. Whether you're just starting out or looking to sharpen your skills, I'm here to share my journey, strategies, and love for the game. Join me as we explore the battlefield, face intense challenges, and achieve epic victories together. Ready to drop in and dominate? Let's play!"}/>

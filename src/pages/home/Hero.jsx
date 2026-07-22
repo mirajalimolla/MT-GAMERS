@@ -48,10 +48,10 @@ function Hero() {
 
     return (
         <section className="relative w-screen bg-[linear-gradient(#00000047,#000000b3)]">
-            <div className="absolute w-full top-32 z-10">
-                <div className="grid gap-5 place-items-center text-white">
-                    <h1 className="text-5xl font-semibold text-shadow-[0px_0px_5px_white]">Hi, I'm <span className="text-[crimson] font-bold">MT GAMERS</span></h1>
-                    <h3 className="flex items-center gap-3 text-4xl font-bold text-shadow-[0px_0px_5px_white]">I'm a <span className="text-[crimson] flex">{displayText} <span ref={cursor} className="animate-[pulse_1s_ease_infinite]">|</span></span></h3>
+            <div className="absolute w-full sm:top-32 top-[15vw] z-10">
+                <div className="grid sm:gap-5 place-items-center text-white">
+                    <h1 className="sm:text-5xl text-[7vw] font-semibold text-shadow-[0px_0px_5px_white]">Hi, I'm <span className="text-[crimson] font-bold">MT GAMERS</span></h1>
+                    <h3 className="flex items-center gap-3 sm:text-4xl text-[5vw] font-bold text-shadow-[0px_0px_5px_white]">I'm a <span className="text-[crimson] flex">{displayText} <span ref={cursor} className="animate-[pulse_1s_ease_infinite]">|</span></span></h3>
                 </div>
             </div>
 

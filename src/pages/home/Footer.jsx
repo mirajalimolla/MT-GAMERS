@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 
 function Footer() {
     return (
-        <footer className="bg-black text-gray-400 py-15">
-            <div className="w-[80%] m-auto">
+        <footer className="bg-black text-gray-400 pt-10 pb-5 sm:py-15">
+            <div className="w-[95%] md:w-[90%] xl:w-[80%] m-auto">
                 <div className="text-center">
                     <h1 className="text-4xl font-semibold">MT GAMERS</h1>
                     <p className=" my-2">This website based on gaming so if you loved watch and play games so visit my social media handels I will mestioned in bolow we will see there</p>
                 </div>
                 <hr />
-                <div className="flex justify-center items-baseline gap-10 mt-8">
+                <div className="flex flex-wrap justify-center items-baseline gap-7 lg:gap-10 mt-8">
                     <div className="grid place-items-center">
                         <h3 className="text-3xl font-semibold">LINKS</h3>
                         <div className="flex gap-5 font-semibold mt-2">
@@ -42,7 +42,7 @@ function Footer() {
                         <p>Email - <b>mtgamersofficialrk@gmail.com</b></p>
                     </div>
                 </div>
-                <p className="text-center font-bold text-xl mt-10">ⓒcopyright</p>
+                <p className="text-center font-bold text-xl mt-7 sm:mt-10">ⓒcopyright</p>
             </div>
         </footer>
     );

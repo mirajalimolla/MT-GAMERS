@@ -7,6 +7,8 @@ import GroupChat from './pages/groupChat/GroupChat'
 import Login from './pages/login/Login'
 import ForgotPassword from './pages/login/forgotPassword'
 import Signup from './pages/signUp/Signup'
+import Redeem from './pages/redeem/Redeem'
+import Video from './pages/video/Video'
 
 function App() {
     const router = createBrowserRouter([
@@ -19,6 +21,10 @@ function App() {
             element: <GroupChat />
         },
         {
+            path:"/video",
+            element: <Video />
+        },
+        {
             path:"/login",
             element: <Login />
         },
@@ -29,6 +35,10 @@ function App() {
         {
             path:"/signup",
             element: <Signup />
+        },
+        {
+            path:"/redeem",
+            element: <Redeem />
         }
     ])
 
