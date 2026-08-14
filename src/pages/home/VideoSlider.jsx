@@ -23,7 +23,7 @@ function VideoSlider() {
         } else {
             leftBtn.current.style.visibility = "visible";
         }
-        
+
         // Hide/show the slider button when slider can't move right
         if (position <= (-containerWidth - (-window.innerWidth))) { // After extrem left we cut the screen size for setting slider limit
             rightBtn.current.style.visibility = "hidden";
@@ -37,14 +37,14 @@ function VideoSlider() {
     const moveLeft = () => {
         position += cardWidth;
         container.current.style.left = `${position}px`;
-        isButtonShow() 
+        isButtonShow()
     }
 
     // Move Right
     const moveRight = () => {
         position -= cardWidth;
         container.current.style.left = `${position}px`;
-        isButtonShow() 
+        isButtonShow()
     }
 
     return (
@@ -54,11 +54,12 @@ function VideoSlider() {
                     <div onClick={moveLeft} ref={leftBtn} style={{ visibility: "hidden" }} className="bg-[#4a1515de] text-gray-400 p-3 cursor-pointer z-20">
                         <PiLessThanBold fontSize={40} className="z-10" />
                     </div>
+
                     <div onClick={moveRight} ref={rightBtn} className="bg-[#4a1515de] text-gray-400 p-3 cursor-pointer mr-6">
                         <PiGreaterThanBold fontSize={40} />
                     </div>
                 </div>
-                <div className="relative transition-all duration-400 flex flex-5 justify-self-start gap-3.5" ref={container}>
+                <div className="relative transition-all duration-400 flex justify-self-start gap-3.5" ref={container}>
                     <VideoCard src={'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'} />
                     <VideoCard src={'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'} />
                     <VideoCard src={'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'} />
@@ -68,6 +69,7 @@ function VideoSlider() {
                     <VideoCard src={'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'} />
                     <VideoCard src={'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'} />
                     <VideoCard src={'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'} />
+                    <VideoCard isVideo={false} />
                 </div>
             </div>
         </section>
