@@ -1,6 +1,5 @@
 import DetailsCard from "./homecomponent/DetailsCard";
 import Heading from "./homecomponent/Heading";
-import bgDetail from "../../assets/details.jpg"
 import cardLogo1 from "../../assets/mtGamers.png"
 import cardLogo2 from "../../assets/freefire.png"
 import cardLogo3 from "../../assets/garena_logo.png"

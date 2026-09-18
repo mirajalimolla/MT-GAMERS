@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
+// This is the all in one input field component 
 export function TextInput({ type, placeholder, customStyle, customIconStyle, length, data, errorMsg, isError=false, isPasswordField = false }) {
     const [isPassword, setIsPassword] = useState(true);
 
@@ -19,12 +20,14 @@ export function TextInput({ type, placeholder, customStyle, customIconStyle, len
     );
 }
 
+// This is the submit button component
 export function SubmitBtn({ customStyle, submit }) {
     return (
         <input type={"submit"} value={"Submit"} onClick={submit} className={`${customStyle} bg-green-700 text-white text-lg sm:text-xl w-[40%] m-auto mb-2 p-2 rounded-lg cursor-pointer`} />
     )
 }
 
+// This is the 'Or' devider component 
 export function Or({ customStyle }) {
     return (
         <div className="relative flex items-center justify-center gap-6.5 w-1/2 m-auto h-5">

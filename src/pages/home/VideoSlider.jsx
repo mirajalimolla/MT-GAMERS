@@ -8,6 +8,7 @@ function VideoSlider() {
     const rightBtn = useRef(null);
     const [cardWidth, setCardWidth] = useState(0);
     const [containerWidth, setContainerWidth] = useState(0);
+    const videoUrls = ['https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1', 'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1', 'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1', 'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1', 'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1', 'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1', 'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1', 'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1', 'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1', 'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1', 'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1', 'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1', 'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1', 'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1', 'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'];
     let position = 0;
 
     useEffect(() => {
@@ -60,16 +61,13 @@ function VideoSlider() {
                     </div>
                 </div>
                 <div className="relative transition-all duration-400 flex justify-self-start gap-3.5" ref={container}>
-                    <VideoCard src={'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'} />
-                    <VideoCard src={'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'} />
-                    <VideoCard src={'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'} />
-                    <VideoCard src={'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'} />
-                    <VideoCard src={'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'} />
-                    <VideoCard src={'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'} />
-                    <VideoCard src={'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'} />
-                    <VideoCard src={'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'} />
-                    <VideoCard src={'https://www.youtube.com/embed/i1ReLb9xrJw?si=DhWNDqwgkylnSaYZ?autoplay=1&mute=1'} />
-                    <VideoCard isVideo={false} />
+                    {
+                        // Display all the video from the video container array
+                        videoUrls.map((elem, id) => {
+                            return <VideoCard key={id} src={elem} />
+                        })
+                    }
+                    <VideoCard isVideo={false} /> {/* This is the see all button in video slider */}
                 </div>
             </div>
         </section>

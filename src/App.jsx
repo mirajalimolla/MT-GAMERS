@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import './App.css'
 import Home from './pages/home/Home'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
@@ -11,6 +10,7 @@ import Redeem from './pages/redeem/Redeem'
 import Video from './pages/video/Video'
 
 function App() {
+    // Creating routs
     const router = createBrowserRouter([
         {
             path:"/",

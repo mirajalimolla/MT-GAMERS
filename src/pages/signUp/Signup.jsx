@@ -24,7 +24,6 @@ function Signup() {
     const [alartBox, setAlartBox] = useState(false);
     let isSuccess = false;
 
-
     // Name validation
     const nameValidation = () => {
         if (name === "") {

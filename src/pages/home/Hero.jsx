@@ -4,7 +4,6 @@ import bgVideo from '../../assets/bg.mp4'
 function Hero() {
     const cursor = useRef(null);
     const professionBox = ["Gamer", "Live Streamer", "Youtuber", "Content Creator"];
-    const [profession, setProfession] = useState("");
     const [professionIndex, setProfessionIndex] = useState(0);
     const [displayText, setDisplayText] = useState("");
     let typingSpeed = 150;
