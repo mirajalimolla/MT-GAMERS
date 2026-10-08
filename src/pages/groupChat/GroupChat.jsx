@@ -3,6 +3,7 @@ import { BsThreeDots } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 import SidebarMenu from "../components/SidebarMenu";
 import { FaX } from "react-icons/fa6";
+import groupChatBg from "../../assets/groupChat.jpg";
 
 function GroupChat() {
     // This is all message
@@ -87,7 +88,7 @@ function GroupChat() {
     }
 
     return (
-        <section style={{ background: "linear-gradient(rgb(0 0 0 / 0%)), url(/src/assets/groupChat.jpg) no-repeat", backgroundSize: "cover" }} className="relative w-full h-screen">
+        <section style={{ background: `linear-gradient(rgb(0 0 0 / 0%)), url(${groupChatBg}) no-repeat`, backgroundSize: "cover" }} className="relative w-full h-screen">
             <SidebarMenu />
             <div className="w-[90%] h-screen m-auto">
                 <div className="h-[90vh]">

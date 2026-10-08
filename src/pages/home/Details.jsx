@@ -3,10 +3,11 @@ import Heading from "./homecomponent/Heading";
 import cardLogo1 from "../../assets/mtGamers.png"
 import cardLogo2 from "../../assets/freefire.png"
 import cardLogo3 from "../../assets/garena_logo.png"
+import detaildBg from "../../assets/details.jpg"
 
 function Details() {
     return (
-        <section style={{background:`linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 28%)), url(/src/assets/details.jpg) no-repeat`, backgroundSize:"cover", backgroundAttachment:"fixed", backgroundPosition:"center center"}} className="py-25 grid place-items-center">
+        <section style={{background:`linear-gradient(rgb(0 0 0 / 63%), rgb(0 0 0 / 28%)), url(${detaildBg}) no-repeat`, backgroundSize:"cover", backgroundAttachment:"fixed", backgroundPosition:"center center"}} className="py-25 grid place-items-center">
             <div className="w-[90%] sm:w-[85%] xl:w-[70%]">
                 <Heading text={"DETAILS FOR ME"}/>
                 <div className="mt-10">

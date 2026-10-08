@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Or, SubmitBtn, TextInput } from "../components/Form";
 import { useState } from "react";
+import signupBg from "../../assets/contact.jpg";
 
 function Signup() {
     // Input states
@@ -128,15 +129,15 @@ function Signup() {
     }
 
     return (
-        <section style={{ background: "linear-gradient(90deg, rgb(0 0 0 / 0%), rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url('./src/assets/contact.jpg') no-repeat", backgroundSize: "cover" }} className="h-screen">
+        <section style={{ background: `linear-gradient(90deg, rgb(0 0 0 / 0%), rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(${signupBg}) no-repeat`, backgroundSize: "cover" }} className="h-screen">
             <h1 className="text-center text-3xl sm:text-4xl lg:text-5xl text-white font-bold pt-2 sm:block hidden">REGESTRATION IN MT GAMERS</h1>
             <form className="relative grid text-white w-[85%] m-auto md:w-[60%] lg:w-[50%] xl:w-[45%] md:float-end md:right-10 lg:right-22 top-6">
-                <TextInput type={"text"} data={(e) => setName(e.target.value)} placeholder={"Full name"} isError={isNameErr} errorMsg={nameErrMsg} customStyle={"border-transparent py-2.5 bg-[url('./src/assets/aboutBg.jpg')] bg-center bg-fixed"} />
-                <TextInput type={"email"} data={(e) => setEmail(e.target.value)} placeholder={"Email"} isError={isEmailErr} errorMsg={emailErrMsg} customStyle={"border-transparent py-2.5 bg-[url('./src/assets/aboutBg.jpg')] bg-center bg-fixed"} />
-                <TextInput type={"number"} data={(e) => setNumber(e.target.value)} placeholder={"Number"} isError={isNumberErr} errorMsg={numberErrMsg} customStyle={"border-transparent py-2.5 bg-[url('./src/assets/aboutBg.jpg')] bg-center bg-fixed"} />
-                <TextInput type={"password"} data={(e) => setPassword(e.target.value)} placeholder={"Password"} isError={isPassowrdErr} errorMsg={passwordErrMsg} customStyle={"border-transparent py-2.5 bg-[url('./src/assets/aboutBg.jpg')] bg-center bg-fixed"} isPasswordField={true} customIconStyle={"text-white"} />
-                <TextInput type={"password"} data={(e) => setCpassword(e.target.value)} placeholder={"Confirm password"} isError={isCpassowrdErr} errorMsg={cPasswordErrMsg} customStyle={"border-transparent py-2.5 bg-[url('./src/assets/aboutBg.jpg')] bg-center bg-fixed"} isPasswordField={true} customIconStyle={"text-white"} />
-                <SubmitBtn submit={handler} customStyle={"border-transparent py-2.5 bg-[url('./src/assets/aboutBg.jpg')] mt-3 text-[15px] font-bold bg-center bg-fixed"} />
+                <TextInput type={"text"} data={(e) => setName(e.target.value)} placeholder={"Full name"} isError={isNameErr} errorMsg={nameErrMsg} customStyle={`border-transparent py-2.5`} isImage={true} />
+                <TextInput type={"email"} data={(e) => setEmail(e.target.value)} placeholder={"Email"} isError={isEmailErr} errorMsg={emailErrMsg} customStyle={`border-transparent py-2.5`} isImage={true} />
+                <TextInput type={"number"} data={(e) => setNumber(e.target.value)} placeholder={"Number"} isError={isNumberErr} errorMsg={numberErrMsg} customStyle={`border-transparent py-2.5`} isImage={true} />
+                <TextInput type={"password"} data={(e) => setPassword(e.target.value)} placeholder={"Password"} isError={isPassowrdErr} errorMsg={passwordErrMsg} customStyle={`border-transparent py-2.5`} isPasswordField={true} customIconStyle={"text-white"} isImage={true} />
+                <TextInput type={"password"} data={(e) => setCpassword(e.target.value)} placeholder={"Confirm password"} isError={isCpassowrdErr} errorMsg={cPasswordErrMsg} customStyle={`border-transparent py-2.5`} isPasswordField={true} customIconStyle={"text-white"} isImage={true} />
+                <SubmitBtn submit={handler} customStyle={`border-transparent py-2.5 mt-3 text-[15px] font-bold`} isImage={true} />
 
                 <div className={`${alartBox ? "block" : "hidden"} grid place-items-center w-[70%] m-auto py-2 ${isSuccess ? "bg-[#00ff0036]" : "bg-[#ff00003b]"}`}>
                     <h3 className="text-lg font-semibold">{isSuccess ? "Account created succesfully" : "Something is wrong"}</h3>

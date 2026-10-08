@@ -1,14 +1,15 @@
 import { useEffect, useRef, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import inputBg from "../../assets/aboutBg.jpg";
 
 // This is the all in one input field component 
-export function TextInput({ type, placeholder, customStyle, customIconStyle, length, data, errorMsg, isError=false, isPasswordField = false }) {
+export function TextInput({ type, placeholder, customStyle, customIconStyle, data, errorMsg, isError=false, isPasswordField = false, isImage = false }) {
     const [isPassword, setIsPassword] = useState(true);
 
     return (
         <div className="relative">
             <div className={`${isError ? "mb-2" : "m-2"}`}>
-                <input type={isPasswordField ? (isPassword ? "password" : "text") : type} placeholder={`Enter your ${placeholder}`} onChange={data} name={type} id={type} className={`${customStyle} outline-0 border-2 border-gray-500 font-semibold text-[16px] p-2 rounded-lg w-full`} style={{ borderColor: `${isError ? "red" : ""}` }} />
+                <input type={isPasswordField ? (isPassword ? "password" : "text") : type} placeholder={`Enter your ${placeholder}`} onChange={data} name={type} id={type} className={`${customStyle} outline-0 border-2 border-gray-500 font-semibold text-[16px] p-2 rounded-lg w-full`} style={{ borderColor: `${isError ? "red" : ""}`, background: isImage ? `url(${inputBg}) fixed right no-repeat` : "none"}} />
                 <label htmlFor={type} className={`${isError ? `text-red-600 ml-3.5 font-semibold` : ""}`}>{isError ? errorMsg : ""}</label>
             </div>
             {
@@ -21,9 +22,9 @@ export function TextInput({ type, placeholder, customStyle, customIconStyle, len
 }
 
 // This is the submit button component
-export function SubmitBtn({ customStyle, submit }) {
+export function SubmitBtn({ customStyle, submit, isImage }) {
     return (
-        <input type={"submit"} value={"Submit"} onClick={submit} className={`${customStyle} bg-green-700 text-white text-lg sm:text-xl w-[40%] m-auto mb-2 p-2 rounded-lg cursor-pointer`} />
+        <input type={"submit"} value={"Submit"} onClick={submit} className={`${customStyle} bg-green-700 text-white text-lg sm:text-xl w-[40%] m-auto mb-2 p-2 rounded-lg cursor-pointer`} style={{ background: isImage ? `url(${inputBg}) fixed right no-repeat` : ""}} />
     )
 }
 
