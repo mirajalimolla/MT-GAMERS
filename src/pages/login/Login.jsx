@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import ForgotPassword from "./forgotPassword";
 import { TextInput, SubmitBtn, Or } from "../components/Form.jsx"
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import loginBg from "../../assets/login.jpg";
 
 function Login() {
     const [email, setEmail] = useState("");
@@ -14,23 +14,23 @@ function Login() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if(email === ""){
+        if (email === "") {
             setIsEmailErr(true);
             setEmailErrorMsg("Email is empty");
-        }else {
+        } else {
             setIsEmailErr(false);
         }
 
-        if(password === ""){
+        if (password === "") {
             setIsPasswordErr(true);
             setPasswordErrorMsg("Password is empty");
-        }else {
+        } else {
             setIsPasswordErr(false);
         }
     }
 
     return (
-        <section style={{ background: "url('./src/assets/login.jpg') no-repeat", backgroundPosition: "center", backgroundSize: "cover" }} className="grid place-items-center h-screen bg">
+        <section style={{ background: `url(${loginBg}) no-repeat`, backgroundPosition: "center", backgroundSize: "cover" }} className="grid place-items-center h-screen bg">
             <form className="sm:p-3 p-2 rounded-2xl bg-white grid w-[95%] sm:w-[70%] md:w-[60%] lg:w-[50%] xl:w-[40%]">
                 <h1 className="text-center text-3xl font-bold">LOGIN FORM</h1>
 
