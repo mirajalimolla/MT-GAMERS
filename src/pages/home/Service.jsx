@@ -1,4 +1,4 @@
-import Heading from "./homeComponent/Heading.jsx";
+import Heading from "./homeComponent/Heading";
 
 function Service() {
     // Service info provider
