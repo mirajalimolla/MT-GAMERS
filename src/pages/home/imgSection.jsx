@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
-import coverBg from "../../assets/image_bg2.png";
-import img1 from "../../assets/1.jpg";
-import img2 from "../../assets/2.jpg";
-import img3 from "../../assets/3.jpg";
-import img4 from "../../assets/4.jpg";
-import img5 from "../../assets/5.jpg";
-import img6 from "../../assets/6.jpg";
-import img7 from "../../assets/7.jpg";
-import img8 from "../../assets/8.jpg";
-import img9 from "../../assets/9.jpg";
-import img10 from "../../assets/10.jpg";
-import img11 from "../../assets/11.jpg";
+import coverBg from "../../assets/image_bg2.avif";
+import img1 from "../../assets/1.avif";
+import img2 from "../../assets/2.avif";
+import img3 from "../../assets/3.avif";
+import img4 from "../../assets/4.avif";
+import img5 from "../../assets/5.avif";
+import img6 from "../../assets/6.avif";
+import img7 from "../../assets/7.avif";
+import img8 from "../../assets/8.avif";
+import img9 from "../../assets/9.avif";
+import img10 from "../../assets/10.avif";
+import img11 from "../../assets/11.avif";
 
 function ImgSection() {
     let images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11];
@@ -29,8 +29,8 @@ function ImgSection() {
 
     return (
         <section className="relative">
-            <img src={coverBg} className="absolute h-130 w-full object-cover" />
-            <img src={url} className="w-screen h-130 object-cover" />
+            <img src={coverBg} loading="lazy" className="absolute h-130 w-full object-cover" />
+            <img src={url} loading="lazy" className="w-screen h-130 object-cover" />
         </section>
     );
 }

@@ -1,5 +1,5 @@
 import Heading from "./homecomponent/Heading";
-import aboutBg from "../../assets/aboutBg.jpg";
+import aboutBg from "../../assets/aboutBg.avif";
 
 function About() {
     return (

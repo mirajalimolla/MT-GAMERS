@@ -1,9 +1,9 @@
 import DetailsCard from "./homecomponent/DetailsCard";
 import Heading from "./homecomponent/Heading";
-import cardLogo1 from "../../assets/mtGamers.png"
-import cardLogo2 from "../../assets/freeFire.png"
-import cardLogo3 from "../../assets/garena_logo.png"
-import detaildBg from "../../assets/details.jpg"
+import cardLogo1 from "../../assets/mtGamers.avif"
+import cardLogo2 from "../../assets/freeFire.avif"
+import cardLogo3 from "../../assets/garena_logo.avif"
+import detaildBg from "../../assets/details.avif"
 
 function Details() {
     return (

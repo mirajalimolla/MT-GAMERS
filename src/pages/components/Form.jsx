@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import inputBg from "../../assets/aboutBg.jpg";
+import inputBg from "../../assets/aboutBg.avif";
 
 // This is the all in one input field component 
 export function TextInput({ type, placeholder, customStyle, customIconStyle, data, errorMsg, isError=false, isPasswordField = false, isImage = false }) {

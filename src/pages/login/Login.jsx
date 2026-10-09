@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { TextInput, SubmitBtn, Or } from "../components/Form.jsx"
 import { useState } from "react";
-import loginBg from "../../assets/login.jpg";
+import loginBg from "../../assets/login.avif";
 
 function Login() {
     const [email, setEmail] = useState("");

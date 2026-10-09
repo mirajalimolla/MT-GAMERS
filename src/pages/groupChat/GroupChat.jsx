@@ -3,7 +3,7 @@ import { BsThreeDots } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 import SidebarMenu from "../components/SidebarMenu";
 import { FaX } from "react-icons/fa6";
-import groupChatBg from "../../assets/groupChat.jpg";
+import groupChatBg from "../../assets/groupChat.avif";
 
 function GroupChat() {
     // This is all message

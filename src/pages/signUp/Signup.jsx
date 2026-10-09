@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Or, SubmitBtn, TextInput } from "../components/Form";
 import { useState } from "react";
-import signupBg from "../../assets/contact.jpg";
+import signupBg from "../../assets/contact.avif";
 
 function Signup() {
     // Input states
@@ -129,7 +129,7 @@ function Signup() {
     }
 
     return (
-        <section style={{ background: `linear-gradient(90deg, rgb(0 0 0 / 0%), rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(${signupBg}) no-repeat`, backgroundSize: "cover" }} className="h-screen">
+        <section style={{ background: `linear-gradient(90deg, rgb(0 0 0 / 0%), rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)), url(${signupBg}) no-repeat`, backgroundSize: "cover" }} className="min-h-screen">
             <h1 className="text-center text-3xl sm:text-4xl lg:text-5xl text-white font-bold pt-2 sm:block hidden">REGESTRATION IN MT GAMERS</h1>
             <form className="relative grid text-white w-[85%] m-auto md:w-[60%] lg:w-[50%] xl:w-[45%] md:float-end md:right-10 lg:right-22 top-6">
                 <TextInput type={"text"} data={(e) => setName(e.target.value)} placeholder={"Full name"} isError={isNameErr} errorMsg={nameErrMsg} customStyle={`border-transparent py-2.5`} isImage={true} />

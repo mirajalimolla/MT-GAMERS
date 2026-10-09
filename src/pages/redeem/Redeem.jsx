@@ -1,6 +1,6 @@
 import RedeemCard from "./RedeemCard";
 import SidebarMenu from "../components/SidebarMenu";
-import redeemBg from "../../assets/details.jpg";
+import redeemBg from "../../assets/details.avif";
 
 function Redeem() {
     const redeemInfo = [

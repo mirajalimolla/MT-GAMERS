@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { TextInput, SubmitBtn, Or } from "../components/Form";
-import forgotPasswordBg from "../../assets/2.jpg";
+import forgotPasswordBg from "../../assets/2.avif";
 
 function ForgotPassword() {
     return (

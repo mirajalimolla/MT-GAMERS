@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import logo from '../../assets/mtGamers.png'
+import logo from '../../assets/mtGamers.avif'
 import { NavLink } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import { CgClose } from 'react-icons/cg';
