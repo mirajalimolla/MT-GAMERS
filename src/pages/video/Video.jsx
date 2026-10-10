@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 function Video() {
     const [youtubeInfo, setYoutubeInfo] = useState("Loading...");
@@ -30,6 +31,11 @@ function Video() {
 
     return (
         <section>
+            {/* This is for SEO */}
+            <Helmet>
+                <title>MT Gamers | Video</title>
+                <meta name="description" content="Watch MT Gamers' Free Fire gameplay videos, highlights, and livestream content. Explore exciting moments and gaming action." />
+            </Helmet>
             <div className="p-1">
                 {/* <div className="m-auto w-fit grid place-items-center">
                     <img src={youtubeInfo.thumbnails} className="h-40 w-40 object-cover rounded-full border-6 border-[crimson]" />

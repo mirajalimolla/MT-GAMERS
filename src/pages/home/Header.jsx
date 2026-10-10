@@ -40,7 +40,7 @@ function Header() {
                     </ul>
                 </div>
                 <div className={`${sideMenu ? "hidden" : ""} block`}> {/* This div contain the logo only for desktop header */}
-                    <img src={logo} loading='lazy' className='sm:h-25 sm:w-25 h-15 min-w-fit object-cover' />
+                    <img src={logo} loading='lazy' alt="Logo" className='sm:h-25 sm:w-25 h-15 min-w-fit object-cover' />
                 </div>
                 <div className='hidden sm:block'>
                     <ul className='flex gap-7'>

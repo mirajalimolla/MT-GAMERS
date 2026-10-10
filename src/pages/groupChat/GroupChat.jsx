@@ -4,6 +4,7 @@ import { FaUser } from "react-icons/fa";
 import SidebarMenu from "../components/SidebarMenu";
 import { FaX } from "react-icons/fa6";
 import groupChatBg from "../../assets/groupChat.avif";
+import { Helmet } from "react-helmet-async";
 
 function GroupChat() {
     // This is all message
@@ -89,6 +90,12 @@ function GroupChat() {
 
     return (
         <section style={{ background: `linear-gradient(rgb(0 0 0 / 0%)), url(${groupChatBg}) no-repeat`, backgroundSize: "cover" }} className="relative w-full h-screen">
+            {/* This is for SEO */}
+            <Helmet>
+                <title>MT Gamers | Group Chat</title>
+                <meta name="description" content="Connect with the MT Gamers community to discuss Free Fire, share gaming experiences, and interact with fellow players." />
+            </Helmet>
+            
             <SidebarMenu />
             <div className="w-[90%] h-screen m-auto">
                 <div className="h-[90vh]">

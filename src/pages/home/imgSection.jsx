@@ -29,8 +29,8 @@ function ImgSection() {
 
     return (
         <section className="relative">
-            <img src={coverBg} loading="lazy" className="absolute h-130 w-full object-cover" />
-            <img src={url} loading="lazy" className="w-screen h-130 object-cover" />
+            <img src={coverBg} loading="lazy" alt="Cover up image" className="absolute h-130 w-full object-cover" />
+            <img src={url} loading="lazy" alt="Slider image" className="w-screen h-130 object-cover" />
         </section>
     );
 }

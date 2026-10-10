@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
 import { TextInput, SubmitBtn, Or } from "../components/Form";
 import forgotPasswordBg from "../../assets/2.avif";
+import { Helmet } from "react-helmet-async";
 
 function ForgotPassword() {
     return (
         <section style={{ background: `linear-gradient(rgb(0 0 0 / 30%)), url(${forgotPasswordBg}) no-repeat`, backgroundSize: "cover", backgroundPosition: "center" }} className="h-screen grid place-items-center">
+            {/* This is for SEO */}
+            <Helmet>
+                <title>MT Gamers | Forgot Password</title>
+                <meta name="description" content="Forgot your MT Gamers password? Follow the password recovery process to regain access to your account." />
+            </Helmet>
+            
             <form className="bg-white px-3 py-4 rounded-2xl grid gap-3 w-[90%] sm:w-[70%] md:w-[60%] lg:w-[50%] xl:w-[40%]">
                 <h1 className="text-center font-extrabold sm:font-bold text-xl sm:text-3xl">RESET YOUR PASSWORD</h1>
                 <TextInput type={"email"} errorMsg={"Invalid email"} customErrorStyle={"mb-[-10px]"} placeholder={"Email"} />

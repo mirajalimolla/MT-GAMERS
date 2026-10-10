@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { TextInput, SubmitBtn, Or } from "../components/Form.jsx"
+import { Helmet } from "react-helmet-async";
 import { useState } from "react";
 import loginBg from "../../assets/login.avif";
 
@@ -31,6 +32,12 @@ function Login() {
 
     return (
         <section style={{ background: `url(${loginBg}) no-repeat`, backgroundPosition: "center", backgroundSize: "cover" }} className="grid place-items-center h-screen bg">
+            {/* This is for SEO */}
+            <Helmet>
+                <title>MT Gamers | Login</title>
+                <meta name="description" content="Log in to your MT Gamers account to access your account features and continue your gaming experience." />
+            </Helmet>
+            
             <form className="sm:p-3 p-2 rounded-2xl bg-white grid w-[95%] sm:w-[70%] md:w-[60%] lg:w-[50%] xl:w-[40%]">
                 <h1 className="text-center text-3xl font-bold">LOGIN FORM</h1>
 
